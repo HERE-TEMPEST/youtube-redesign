@@ -1,0 +1,15 @@
+.wrapper {
+
+  display: flex;
+  flex-direction: column;
+
+  .videoContent {
+    display: flex;
+    flex-direction: column;
+  
+    .videoPlayer {
+      width: 1363px;
+      height: 700px;
+    }
+  }
+}

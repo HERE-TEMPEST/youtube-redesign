@@ -1,0 +1,83 @@
+.wrapper {
+  margin-top: 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .btnSubscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 154px;
+    height: 40px;
+    background-color: #FF0000;
+
+    .text {
+      font-family: 'Mulish', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+    }  
+  }
+
+
+  .channelInfo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+
+    .channelProfile {
+      width: 80px;
+      height: 80px;
+    }
+
+    .info {
+      margin-left: 12px;
+      display: flex;
+      flex-direction: column;
+
+      .channelName {
+        color: #19202C;
+        font-family: 'Mulish', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 33px;
+      }
+
+      .datePublished {
+        margin-top: 4px;
+        font-family: 'Mulish', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #C2C2C2;
+      }
+
+      .content {
+        width: 820px;
+        margin-top: 14px;
+        font-family: 'Mulish', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+      }
+
+      .showMore {
+        margin-top: 15px;
+        font-family: 'Mulish', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;              
+        color: #C2C2C2;
+      }
+    }
+  }
+}

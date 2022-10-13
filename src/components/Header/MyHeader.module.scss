@@ -1,0 +1,56 @@
+.wrapper {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+
+
+  .componentOne {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    .burgerMenu {
+      margin-left: 32px;
+      margin-right: 28px;
+      width: 20px;
+      height: 17px;
+    }
+
+    .searchBar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .YoutubeLogo {
+        width: 116px;
+        height: 25px;
+        margin-right: 60px;
+      }
+    }
+  }
+
+  .componentTwo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .navBar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 175px;
+      height: 32px;
+      margin-right: 49px;
+    }
+
+    .imageProfile {
+      width: 40px;
+      height: 40px;
+      margin-right: 70px;
+    }
+  }
+}

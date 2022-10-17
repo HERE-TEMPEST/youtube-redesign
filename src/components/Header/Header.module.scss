@@ -1,12 +1,12 @@
 .wrapper {
-  min-width: 94.68%;
+  width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
   display: flex;
   justify-content: space-between;
 
   .navigations {
-    min-width: 82.25%;
+    min-width: 82.55%;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -18,8 +18,17 @@
       height: 17px;
     }
 
+    @media only screen and (max-width: 600px) {
+      .burgerMenu {
+        display: none;
+      }
+      .youtubeLogo {
+        margin-left: 16px;
+      }
+    }
+
     .search {
-      width: 56.56%;
+      width: 63.56%;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -46,12 +55,17 @@
           font-size: 16px;
           line-height: 20px;
         }
-
         .search {
           position: absolute;
           width: 18px;
           height: 18px;
           right: 18px;
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .input {
+          display: none;
         }
       }
 
@@ -64,10 +78,21 @@
   }
 
   .tools {
-    min-width: 14.57%;
+    min-width: 17.44%;
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    .searchLoupe {
+      margin-right: 20px;
+      display: none;
+    }
+
+    .moreTools {
+      margin-left: auto;
+      margin-right: 20px;
+      display: none;
+    }
 
     .navBar {
       display: flex;
@@ -76,14 +101,40 @@
       justify-content: space-between;
       width: 175px;
       height: 32px;
-      margin-right: 49px;
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .navBar {
+        display: none;
+      }
+      .moreTools {
+        display: flex;
+      }
+    }
+
+    @media only screen and (max-width: 1300px) {
+      .imageProfile {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .searchLoupe {
+        display: flex;
+      }
     }
 
     .imageProfile {
+      margin-left: 14.92%;
       width: 40px;
       height: 40px;
-      margin-left: auto;
-      margin-right: 60px;
+      margin-right: 20%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .tools {
+      width: 100%;
     }
   }
 }

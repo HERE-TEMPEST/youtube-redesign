@@ -46,6 +46,13 @@ export const Header = () => {
       </div>
 
       <div className={scss.tools}>
+        <div className={scss.searchLoupe}>
+          <SvgSelector name="Loupe" />
+        </div>
+        <div className={scss.moreTools}>
+          <SvgSelector name="MoreTools" className={scss.moreTools} />
+        </div>
+
         <div className={scss.navBar}>
           {navigationBar.map((element) => (
             <SvgSelector
@@ -57,7 +64,9 @@ export const Header = () => {
             />
           ))}
         </div>
-        <img className={scss.imageProfile} src={user.profile} alt="" />
+        <div className={scss.imageProfile}>
+          <img src={user.profile} alt="" />
+        </div>
       </div>
     </header>
   );

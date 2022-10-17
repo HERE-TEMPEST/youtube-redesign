@@ -1,4 +1,3 @@
-export * from './SvgSelector';
-export * from './SearchInput';
-export * from './Svg';
-export * from './Line';
+export * from "./Svg";
+export * from "./Header";
+export * from "./Sliders";

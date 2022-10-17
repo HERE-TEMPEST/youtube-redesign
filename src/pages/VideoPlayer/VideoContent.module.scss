@@ -1,3 +1,5 @@
+@import "../../components/Mixins.scss";
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -13,8 +15,7 @@
     flex-direction: column;
 
     .videoName {
-      font-family: 'Mulish', sans-serif;
-      font-style: normal;
+      @include fontFamily;
       font-weight: 700;
       font-size: 36px;
       line-height: 45px;
@@ -28,9 +29,9 @@
       align-items: center;
 
       .views {
-        font-family: 'Mulish', sans-serif;
-        color: #C2C2C2;
+        @include fontFamily;
         font-style: normal;
+        color: #c2c2c2;
         font-weight: 400;
         font-size: 20px;
         line-height: 25px;
@@ -40,7 +41,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        
+
         .tools {
           width: 320px;
           margin-right: 40px;
@@ -55,7 +56,7 @@
             height: 40px;
             position: relative;
             border-radius: 20px;
-            background-color: #EBEBEB;
+            background-color: #ebebeb;
 
             .item {
               margin-left: 20px;

@@ -3,3 +3,9 @@
   flex-direction: row;
   margin-left: 80px;
 }
+
+@media only screen and (max-width: 320px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}

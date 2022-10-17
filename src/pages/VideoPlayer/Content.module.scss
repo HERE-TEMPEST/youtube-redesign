@@ -1,15 +1,25 @@
-.wrapper {
+@import "../../components/Mixins.scss";
 
+.wrapper {
   display: flex;
+  height: 1200px;
+  overflow: hidden;
   flex-direction: column;
 
   .videoContent {
     display: flex;
     flex-direction: column;
-  
+
     .videoPlayer {
       width: 1363px;
       height: 700px;
     }
+  }
+
+  .line {
+    @include line;
+    height: 1px;
+    width: 1363px;
+    margin-top: 15px;
   }
 }
